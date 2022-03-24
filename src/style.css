@@ -1,0 +1,73 @@
+body {
+  background-color: rgb(54, 175, 101);
+}
+:root {
+  --border-color: rgb(33, 105, 61);
+  --border-line-width: 6px;
+}
+
+button {
+  font-size: 24px;
+  background-color: rgb(54, 175, 101);
+  color: white;
+  padding: 8px;
+  outline: none;
+  border: 2px solid white;
+  transition: 0.6s;
+}
+
+button:hover {
+  background-color: rgb(255, 255, 255, 0.8);
+  color: rgb(61, 131, 61);
+  transition: 0.6s;
+}
+
+.button-div {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.tic-tac-toe {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.block {
+  width: 100px;
+  min-width: 100px;
+  height: 100px;
+  min-height: 100px;
+  background-color: rgb(54, 175, 101);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.block > span {
+  color: white;
+  font-size: 64px;
+}
+
+.br {
+  border-right: var(--border-line-width) solid var(--border-color);
+}
+
+.bl {
+  border-left: var(--border-line-width) solid var(--border-color);
+}
+
+.bt {
+  border-top: var(--border-line-width) solid var(--border-color);
+}
+
+.bb {
+  border-bottom: var(--border-line-width) solid var(--border-color);
+}
